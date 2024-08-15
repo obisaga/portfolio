@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --brand-cream: #f1efee;
+  --brand-grey: #7c7c7c;
+
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Fahkwang', sans-serif;
+  --font-decorational: 'Cormorant Garamond', serif;
+
+  max-width: 1521px;
+max-height: 743px;
+  }
+
+
+  body, html, .containerOne {
+    margin: 0;
+    padding: 0;
+  }
+
+
+p {
+  font-family: var(--font-secondary);
+  color:rgb(87, 87, 87);
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+/* body {
+  background-color: var(--brand-cream);
+} */
+
+
+
+
+.fontPOne {
+  font-family: var(--font-primary);
+  font-size: 1em;
+
+}
+
+.fontSLogo {
+  font-family: var(--font-secondary);
+font-size: 5rem;
+
+}
+.fontSOne {
+  font-family: var(--font-secondary);
+  font-size: 1em;
+
+
+}
+.fontDOne {
+  font-family: var(--font-decorational);
+  color: #caa88e ;
+  font-size: 1.5em;
+
+
+}
+
+
+.containerOne {
+  display: flex;
+  flex-direction: column;
+  width: 100vh; /* Ensure containerOne takes full width */
+  height: 90vh;
+  margin:0;
+  padding:0;
+}
+
+.navUp {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Wyrównuje elementy w pionie, jeśli potrzebne */
+  justify-content: flex-end; /* Wyrównuje wszystkie elementy do prawej */
+  margin-right: 2.5%; /* Margines z prawej strony */
+  gap: 10px; /* Odstęp 10px między elementami */
+}
+
+.middleS{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 85vh;
+ 
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 auto; /* Center the middleSection horizontally */
+}
+
+
+.list {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  gap: 1.5rem;
+  font-size: 0.4rem;
+  padding-left: 2rem;
+  margin-top: -10rem;
+}
+
+.number {
+  color: var(--brand-cream)
+}
+
+.about {
+  background-image: url("src/assets/motylbw.png");  
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.navDown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Rozdziela elementy na początku i końcu kontenera */
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.navDown .group-right {
+  display: flex;
+  gap: 20px; /* Odstęp 20px między dwoma elementami po prawej stronie */
+}
