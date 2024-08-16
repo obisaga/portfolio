@@ -131,14 +131,24 @@ body, html {
 
 }
 
+@keyframes shadowPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.8));
+  }
+}
+
 .logoOne {
   width: 15rem;
   height: auto;
   padding-left: 3vh;
   padding-right: 4vh;
 
+  /* Apply the shadow pulse animation */
+  animation: shadowPulse 4s ease-in-out infinite;
 }
-
 
 
 /* PAGE TWO */
