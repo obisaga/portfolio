@@ -1,5 +1,8 @@
+import { Routes, Route} from "react-router-dom";
 import One from './components/One'
 import Two from './components/Two'
+import Three from './components/Three'
+
 import './styles/stylesheet.css'
 import './styles/responsiveness.css'
 
@@ -11,7 +14,18 @@ function App() {
 
   return (
     <>
-<Two/>
+
+
+<Routes>
+
+     
+<Route path="/home/" element={<One />} />
+<Route path="/about" element={<Two />} />
+<Route path="/skills" element={<Three />} />
+
+
+
+</Routes>
 
       
     </>
