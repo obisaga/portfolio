@@ -111,14 +111,11 @@ body, html {
   background: linear-gradient(var(--gradient-angle, 113deg), rgb(255, 255, 255), rgba(241, 239, 238, 0.326)),
            url("data:image/svg+xml,%3Csvg viewBox='0 0 247 247' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='9.14' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   background-size: cover;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 0 auto;
   filter: contrast(100%) brightness(95%);
   transition: background 0.3s ease, filter 0.3s ease;
 }
-
-
-
 
 
 
@@ -141,7 +138,7 @@ body, html {
 }
 
 .logoOne {
-  width: 15rem;
+  width: 12rem;
   height: auto;
   padding-left: 3vh;
   padding-right: 4vh;
@@ -153,14 +150,18 @@ body, html {
 
 /* PAGE TWO */
 
+/* pageTwo styles */
 .pageTwo {
-  background-color: var(--brand-cream);
+  background: linear-gradient(var(--gradient-angle, 113deg), rgb(255, 255, 255), rgba(241, 239, 238, 0.326)),
+              url("data:image/svg+xml,%3Csvg viewBox='0 0 247 247' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='9.14' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
   position: relative;
 }
+
 
 .containerTwo {
   display: flex;
@@ -170,7 +171,7 @@ body, html {
   width: 95%;
   height: 85vh;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 0 auto;
 
 }
@@ -202,8 +203,8 @@ body, html {
   background-size: cover; /* Resize the background image to cover the entire container */
   width: 100%;
   height: 100%;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .description{
@@ -218,164 +219,3 @@ body, html {
 
 
 
-
-
-
-
-
-
-
-/* RESPONSIVENESS */
-
-/* Mini screens */
-@media (max-width: 400px) {
-  .middleSection {
-    padding-right: 15px;
-    height: 50vh;
-  }
-
-  .fontLogo1, .fontLogo2 {
-    font-size: 2rem;
-    padding-left: 20px;
-    padding-right: 0;
-  }
-
-  .logoOne {
-    width: 5rem;
-    height: auto;
-    margin-left: 10px;
-    padding-right: 0;
-  }
-
-  .navDown {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .group-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    margin-right: 0;
-  }
-
-  .textRight {
-    margin: 2vh 0 0 0;
-    padding: 0;
-    font-weight: 500;
-    font-size: 1.3em;
-  }
-
-  /* Centrowanie textLeft */
-  .textLeft {
-    font-size: 0.8em;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-}
-
-/* Small screens */
-@media (max-width: 550px) {
-  .middleSection {
-    padding-right: 15px;
-    height: 50vh;
-  }
-
-  .fontLogo1, .fontLogo2 {
-    font-size: 2rem;
-    padding-left: 20px;
-    padding-right: 0;
-  }
-
-  .logoOne {
-    width: 5rem;
-    height: auto;
-    margin-left: 10px;
-    padding-right: 0;
-  }
-
-  .navDown {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .group-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    margin-right: 0;
-  }
-
-  .textRight {
-    margin: 2vh 0 0 0;
-    padding: 0;
-    font-weight: 500;
-    font-size: 1.3em;
-  }
-
-  /* Centrowanie textLeft */
-  .textLeft {
-    font-size: 0.8em;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-}
-
-/* Small-medium screens */
-@media (min-width: 551px) and (max-width: 750px) {
-  .fontLogo1, .fontLogo2 {
-    font-size: 3.5rem;
-  }
-
-  .logoOne {
-    width: 8.5rem;
-    height: auto;
-  }
-
-  .textLeft {
-    font-size: 0.8em;
-    text-align: left;
-    margin-left: 2%;
-  }
-
-  .group-right {
-    gap: 2vh;
-    margin-right: 1vh;
-  }
-}
-
-/* Medium screens */
-@media (min-width: 751px) and (max-width: 900px) {
-  .fontLogo1, .fontLogo2 {
-    font-size: 3.5rem;
-  }
-
-  .logoOne {
-    width: 8.5rem;
-    height: auto;
-  }
-
-  .group-right {
-    gap: 2vh;
-    margin-right: 4vh;
-  }
-
-  .textLeft {
-    font-size: 0.8em;
-    text-align: left;
-    margin-left: 2%;
-  }
-}
-
-/* Big screens */
-@media (min-width: 901px) {
-  .fontLogo1, .fontLogo2 {
-    font-size: 5rem;
-  }
-}
