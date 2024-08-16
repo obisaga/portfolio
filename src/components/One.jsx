@@ -1,56 +1,35 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/one.css'
-
-
+import NavUp from '../components/NavUp';
+import NavDown from '../components/NavDown';
+import '../styles/stylesheet.css'; // Zakładając, że CSS jest w tym pliku
 
 const One = () => {
+    const [gradientAngle, setGradientAngle] = useState(113); 
+
+    const handleMouseMove = (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        const angle = Math.atan2(y - window.innerHeight / 2, x - window.innerWidth / 2) * (180 / Math.PI) + 180;
+        setGradientAngle(angle);
+    };
+
+    useEffect(() => {
+        window.addEventListener('mousemove', handleMouseMove);
+
+        return () => window.removeEventListener('mousemove', handleMouseMove);
+    }, []);
 
     return (
         <>
-            <div className="containerOne">
-
-                <div className="navUp">
-                    <p className="fontPOne">GER</p>
-                    <p className="fontPOne">⁞</p>
-
-                </div>
-
-                <div className="middleSection">
-
-
-                    <p className="fontSLogo">olga</p>
-                    <img className="logoOne" src="..\src\assets\czarny.png" alt="logo" />
-                    <p className="fontSLogo"> bisaga</p>
-
-                </div>
-
-
-
-                <div class="navDown">
-                    <p class="fontSOne">UX/UI Designer ⁞ Full Stack Web Developer</p>
-                    <div class="group-right">
-                        <p class="fontDOne">PORTFOLIO</p>
-                        <p class="fontDOne">RESUME</p>
-                    </div>
-                </div>
-
-
+            <NavUp />
+            <div className="middleSection" style={{ '--gradient-angle': `${gradientAngle}deg` }}>
+                <p className="fontLogo1">olga</p>
+                <img className="logoOne" src="..\src\assets\czarny.png" alt="logo" />
+                <p className="fontLogo2">bisaga</p>
             </div>
-
-
+            <NavDown />
         </>
-    )
-
+    );
 };
-export default One
 
-
-
-
-
-
-
-
-
-
-
+export default One;
