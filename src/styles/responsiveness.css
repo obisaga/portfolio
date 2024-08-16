@@ -56,7 +56,7 @@
 @media (max-width: 550px) {
   .middleSection {
     padding-right: 15px;
-    height: 50vh;
+    height: 75vh;
   }
 
   .fontLogo1, .fontLogo2 {
@@ -121,14 +121,14 @@
 
   .group-right {
     gap: 2vh;
-    margin-right: 1vh;
+    margin-right: 4vh;
   }
 }
 
 /* Medium screens */
 @media (min-width: 751px) and (max-width: 900px) {
   .fontLogo1, .fontLogo2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .logoOne {
@@ -150,7 +150,9 @@
 
 /* Big screens */
 @media (min-width: 901px) {
-  .fontLogo1, .fontLogo2 {
-    font-size: 5rem;
+  .fontLogo1, .fontLogo2{
+    font-size: 3rem;
+
   }
+
 }

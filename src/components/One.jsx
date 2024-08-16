@@ -16,6 +16,7 @@ const One = () => {
     useEffect(() => {
         window.addEventListener('mousemove', handleMouseMove);
 
+        // Usuń nasłuchiwanie przy demontażu komponentu
         return () => window.removeEventListener('mousemove', handleMouseMove);
     }, []);
 
@@ -24,7 +25,7 @@ const One = () => {
             <NavUp />
             <div className="middleSection" style={{ '--gradient-angle': `${gradientAngle}deg` }}>
                 <p className="fontLogo1">olga</p>
-                <img className="logoOne" src="..\src\assets\czarny.png" alt="logo" />
+                <img className="logoOne" src="..\src\assets\czarne3.png" alt="logo" />
                 <p className="fontLogo2">bisaga</p>
             </div>
             <NavDown />
