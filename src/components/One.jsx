@@ -21,7 +21,7 @@ const One = () => {
     }, []);
 
     return (
-        <>
+        <div className='pageOne'>
             <NavUp />
             <div className="middleSection" style={{ '--gradient-angle': `${gradientAngle}deg` }}>
                 <p className="fontLogo1">olga</p>
@@ -29,7 +29,7 @@ const One = () => {
                 <p className="fontLogo2">bisaga</p>
             </div>
             <NavDown />
-        </>
+        </div>
     );
 };
 

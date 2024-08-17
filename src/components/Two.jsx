@@ -1,37 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import NavUp from '../components/NavUp';
 import NavDown from '../components/NavDown';
-import '../styles/stylesheet.css'
+import '../styles/stylesheet.css';
 
 const Two = () => {
-    const [gradientAngle, setGradientAngle] = useState(113);
-
-    const handleMouseMove = (e) => {
-        const x = e.clientX;
-        const y = e.clientY;
-        const angle = Math.atan2(y - window.innerHeight / 2, x - window.innerWidth / 2) * (180 / Math.PI) + 180;
-        setGradientAngle(angle);
-    };
-
-    useEffect(() => {
-        window.addEventListener('mousemove', handleMouseMove);
-
-        // Usuń nasłuchiwanie przy demontażu komponentu
-        return () => window.removeEventListener('mousemove', handleMouseMove);
-    }, []);
-
     return (
-        <div className='pageTwo' style={{ '--gradient-angle': `${gradientAngle}deg` }}>
+        <div className='pageTwo'>
             <NavUp />
             <div className="containerTwo">
-                
-                
-
-            <div className='navPage2'>
+                <div className="pageNumber pageNumber2">02</div>
+                <div className='navPage2'>
                     <div>
-                    <img className="logoPage2" src="..\src\assets\czarne3.png" alt="logo" />
+                        <img className="logoPage2" src="..\src\assets\czarne3.png" alt="logo" />
                     </div>
-                    
                     <div className="listPage2">
                         <div>
                             <p className='numberPage2'>01</p>
@@ -48,11 +29,7 @@ const Two = () => {
                             <p className='menuItem'>CONTACT</p>
                         </div>
                     </div>
-
                 </div>
-
-
-
                 <div className='about'>
                     <p className='description'>
                         Hi! My name is Olga and I am currently based in Osnabruck, Germany.
@@ -66,4 +43,4 @@ const Two = () => {
     );
 };
 
-export default Two;
+export default Two
