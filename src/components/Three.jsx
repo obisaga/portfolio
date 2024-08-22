@@ -12,7 +12,7 @@ const Three = () => {
                 <div className="pageNumber pageNumber3">03</div>
                 <div className='navPage3'>
                     <div>
-                        <img className="logoPage3" src="..\src\assets\czarne3.png" alt="logo" />
+                        <img className="logoMenu" src="..\src\assets\czarne3.png" alt="logo" />
                     </div>
                     <div className="listPage3">
                         <div>
@@ -23,11 +23,11 @@ const Three = () => {
                             <p className='numberPage3'>05</p>
                         </div>
                         <div>
-                            <p className='menuItem'>HOME</p>
-                            <p className='menuItem'>ABOUT</p>
-                            <p className='menuItem'>SKILLS</p>
-                            <p className='menuItem'>WORKS</p>
-                            <p className='menuItem'>CONTACT</p>
+                            <p className='menuItem mI'>HOME</p>
+                            <p className='menuItem mI'>ABOUT</p>
+                            <p className='menuItem mI'>SKILLS</p>
+                            <p className='menuItem mI'>WORKS</p>
+                            <p className='menuItem mI'>CONTACT</p>
                         </div>
                     </div>
                 </div>

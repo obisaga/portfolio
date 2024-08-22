@@ -11,7 +11,7 @@ const Two = () => {
                 <div className="pageNumber pageNumber2">02</div>
                 <div className='navPage2'>
                     <div>
-                        <img className="logoPage2" src="..\src\assets\czarne3.png" alt="logo" />
+                        <img className="logoMenu" src="..\src\assets\czarne3.png" alt="logo" />
                     </div>
                     <div className="listPage2">
                         <div>
@@ -22,11 +22,11 @@ const Two = () => {
                             <p className='numberPage2'>05</p>
                         </div>
                         <div>
-                            <p className='menuItem'>HOME</p>
-                            <p className='menuItem'>ABOUT</p>
-                            <p className='menuItem'>SKILLS</p>
-                            <p className='menuItem'>WORKS</p>
-                            <p className='menuItem'>CONTACT</p>
+                            <p className='menuItem mI'>HOME</p>
+                            <p className='menuItem mI'>ABOUT</p>
+                            <p className='menuItem mI'>SKILLS</p>
+                            <p className='menuItem mI'>WORKS</p>
+                            <p className='menuItem mI'>CONTACT</p>
                         </div>
                     </div>
                 </div>
