@@ -34,7 +34,7 @@ const Two = () => {
                     <p className='description'>
                         Hi! My name is Olga and I am currently based in Osnabruck, Germany.
                         I have a strong vision to help others and I want to achieve that with the use of new technologies and art.
-                        I have a strong vision to help others and I want to achieve that with the use of new technologies and art.
+                        In my free time I craft silver jewellery and enjoy forest walks.
                     </p>
                 </div>
             </div>

@@ -45,6 +45,8 @@
     padding: 0;
     font-weight: 500;
     font-size: 1.3em;
+  
+    
   }
 
   /* Centrowanie textLeft */
@@ -200,6 +202,8 @@
     align-items: center;
     gap: 0;
     margin-right: 0;
+
+
   }
 
   .textRight {
@@ -208,6 +212,9 @@
     font-weight: 500;
     font-size: 1.3em;
   }
+
+
+
 
   /* Centrowanie textLeft */
   .textLeft {
@@ -232,10 +239,11 @@
   }
 
   .logoOne {
-    width: 5rem;
+    width: 6rem;
     height: auto;
     margin-left: 10px;
     padding-right: 0;
+    padding-bottom: 3rem;
   }
 
   .navDown {
@@ -271,12 +279,14 @@
 /* Small-medium screens */
 @media (min-width: 551px) and (max-width: 750px) {
   .fontLogo1, .fontLogo2 {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
   }
 
   .logoOne {
-    width: 8.5rem;
+    width: 8rem;
     height: auto;
+    padding-bottom: 2.5rem;
+
   }
 
   .textLeft {
@@ -298,13 +308,14 @@
   }
 
   .logoOne {
-    width: 8.5rem;
+    width: 9.5rem;
     height: auto;
+    padding-bottom: 2.5rem;
   }
 
   .group-right {
     gap: 2vh;
-    margin-right: 4vh;
+    margin-right: 2vh;
   }
 
   .textLeft {

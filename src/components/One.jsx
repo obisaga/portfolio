@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import NavUp from '../components/NavUp';
 import NavDown from '../components/NavDown';
-import '../styles/stylesheet.css'; // Zakładając, że CSS jest w tym pliku
+import '../styles/stylesheet.css'; 
 
 const One = () => {
     const [gradientAngle, setGradientAngle] = useState(113); 

@@ -91,7 +91,7 @@ html {
   display: flex;
   flex-direction: row;
   gap: 5vh;
-  margin-right: 10vh;
+  margin-right: 8vh;
 }
 
 
@@ -104,28 +104,11 @@ html {
   transition: transform 0.3s ease-in-out; /* Płynne przejście */
 }
 
-.textRight {
-  display: inline-block; /* Umożliwia stosowanie transformacji */
-  transition: transform 0.2s ease-in-out; /* Płynne przejście */
-  transform-style: preserve-3d; /* Umożliwia efekty 3D */
-}
 
-/* Definiowanie animacji */
-@keyframes rotateBack {
-  0% {
-    transform: rotateY(0deg); /* Początkowy stan */
-  }
-  50% {
-    transform: rotateY(180deg); /* Obrót o 180 stopni */
-  }
-  100% {
-    transform: rotateY(0deg); /* Końcowy stan (wraca do początkowego) */
-  }
-}
 
-/* Styl dla hoveru */
 .textRight:hover {
-  animation: rotateBack 2s ease-in-out infinite; /* Uruchom animację przy hoverze */
+  color: var(--brand-grey);
+
 }
 
 
@@ -159,15 +142,22 @@ html {
 }
 
 
-
 .fontLogo1,
 .fontLogo2 {
   font-family: var(--font-secondary);
   font-size: 4rem;
   font-weight: 300;
   padding-bottom: 9vh;
+}
 
+.logoOne{
+  padding-bottom: 2rem;
 
+  transition: color 0.6s ease, transform 0.6s ease; /* Płynne przejście dla koloru i transformacji */
+
+}
+.logoOne:hover{
+  transform: scale(1.1); 
 }
 
 @keyframes shadowPulse {
@@ -281,15 +271,17 @@ html {
 
 
 .about {
-  background-image: url("src/assets/motylbw.png");
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
+  position: relative;
   width: 80%;
   height: 100%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  background-image: url("src/assets/motylbw.png");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode:luminosity; /* Możesz dostosować tryb mieszania */
+  background-color: rgba(255, 255, 255, 0.5); /* Kolor tła z przezroczystością */
 }
-
 .description {
   font-family: var(--font-primary);
   color: white;
@@ -424,6 +416,7 @@ li {
 }
 
 .liSpecial {
+  padding-top: 1rem;
   margin-left: -45px;
 }
 
@@ -686,6 +679,7 @@ padding-bottom: 2rem;
 }
 
 .header {
+  position: relative;
   margin-top: 1.5rem;
   padding-top: 1.5rem;
   padding-left: 4.5rem;
@@ -701,8 +695,9 @@ padding-bottom: 2rem;
     url("data:image/svg+xml,%3Csvg viewBox='0 0 247 247' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='9.14' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   -webkit-background-clip: text;
   background-clip: text;
-
+  z-index: 1;
 }
+
 
 .contactLinks {
   display: flex;
